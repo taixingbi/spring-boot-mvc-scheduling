@@ -1,4 +1,4 @@
-package com.example.schedulingtasks;
+package springboot;
 import java.util.Date;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 @Component
 
-public class ScheduledTasks {
+public class Controller {
 	@Scheduled(fixedRate = 5000)
 	public void reportCurrentTime() {
 		System.out.println("\n******************************");

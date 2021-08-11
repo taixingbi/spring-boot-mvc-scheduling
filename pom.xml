@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>scheduling-tasks</artifactId>
+	<artifactId>SpringBootTasksApplication</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>scheduling-tasks</name>
+	<name>SpringBootTasksApplication</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -19,14 +19,9 @@
 	</properties>
 
 	<dependencies>
-		<!-- <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency> -->
-
 		<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-web</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
@@ -34,6 +29,11 @@
 			<artifactId>awaitility</artifactId>
 			<version>3.1.2</version>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
 		</dependency>
 
 		<dependency>
