@@ -8,16 +8,15 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@Service // dis
-// @RequestMapping("kafka")
+// @Service 
 public class Publish {
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 
-    @RequestMapping(path = "/publish/{key}", method = RequestMethod.GET)
-    public String getBook(@PathVariable String key) {
+    @RequestMapping(path = "/publish/{key}")
+    public String get_publish(@PathVariable String key) {
         kafkaTemplate.send("quickstart-events", key);
-        System.out.println(key);
+        System.out.println("produced message: " + key);
         return key;
     }
 }

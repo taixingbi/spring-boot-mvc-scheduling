@@ -1,0 +1,22 @@
+2021-08-14 15:44:34.416  WARN 30657 --- [http-nio-8000-exec-3] springboot.SpringBootTasksApplication    : This is a WARN 1 message
+2021-08-14 15:47:38.246  WARN 30842 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logTest': Unsatisfied dependency expressed through field 'Log'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'springboot.Log' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-08-14 15:47:38.298 ERROR 30842 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field Log in springboot.LogTest required a bean of type 'springboot.Log' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'springboot.Log' in your configuration.
+
+2021-08-14 15:48:50.713  WARN 30915 --- [http-nio-8000-exec-1] springboot.SpringBootTasksApplication    : This is a WARN 1 message
+2021-08-14 16:21:58.893  WARN 31473 --- [http-nio-8000-exec-1] springboot.SpringBootTasksApplication    : This is a WARN 1 message
